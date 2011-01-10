@@ -51,7 +51,7 @@ class DirHandler(base.BaseHandler):
                 self.files.append(file)
 
     def prep_initfiles_canaddfile(self, ignorepatt, pattern, file):
-        return not re.search(ignorepatt, pattern)
+        return not re.search(ignorepatt, pattern) and not self.vfs.exists(file)
 
     def prep_entries(self):
         "Generate entries from the list."
