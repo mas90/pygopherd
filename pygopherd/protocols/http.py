@@ -140,9 +140,9 @@ class HTTPProtocol(BaseGopherProtocol):
             retstr += '<A HREF="%s">' % url
         retstr += "<TT>"
         if entry.getname() != None:
-            retstr += cgi.escape(entry.getname())
+            retstr += cgi.escape(entry.getname()).replace("  ", " &nbsp;")
         else:
-            retstr += cgi.escape(entry.getselector())
+            retstr += cgi.escape(entry.getselector()).replace("  ", " &nbsp;")
         retstr += "</TT>"
         if entry.gettype() != 'i' and entry.gettype() != '7':
             retstr += '</A>'

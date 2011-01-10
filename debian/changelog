@@ -1,6 +1,7 @@
 pygopherd (2.0.18.3+nmu2+srcf1) lucid; urgency=low
 
   * Skip nonexistent links in directory lists
+  * Render strings of spaces correctly in HTML
 
  -- Malcolm Scott <debianpkg@malc.org.uk>  Mon, 10 Jan 2011 23:10:27 +0000
 
