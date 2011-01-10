@@ -59,7 +59,7 @@ install: build
 
 	# Add here commands to install the package into debian/pygopherd.
 	#$(MAKE) install DESTDIR=$(CURDIR)/debian/pygopherd
-	$(PYTHON) setup.py install --root=`pwd`/debian/$(PACKAGE) --no-compile
+	$(PYTHON) setup.py install --root=`pwd`/debian/$(PACKAGE) --no-compile --install-layout=deb
 
 
 # Build architecture-dependent files here.

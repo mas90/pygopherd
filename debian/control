@@ -2,7 +2,7 @@ Source: pygopherd
 Section: net
 Priority: optional
 Maintainer: John Goerzen <jgoerzen@complete.org>
-Build-Depends-Indep: python-central (>= 0.5), debhelper (>> 5.0.37.2), python, python (>= 2.3)
+Build-Depends-Indep: python-central (>= 0.5), debhelper (>> 5.0.37.2), python (>= 2.5.4)
 Build-Depends: debhelper (>= 5.0.37.2), python-central (>= 0.5)
 Standards-Version: 3.5.2
 XS-Python-Version: current, >= 2.3
